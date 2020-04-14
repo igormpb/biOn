@@ -1,12 +1,13 @@
 import React from 'react';
-
-import Menu from './components/Menu/Menu'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Routes from './routes.js'
+import './global.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <Menu/>
+    <div className="app">
+     <Routes/>
     </div>
   );
 }

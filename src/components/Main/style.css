@@ -1,0 +1,12 @@
+.tittle{
+    text-align: center;
+}
+li{
+    list-style: none;
+    margin:5px 0px;
+}
+
+span{
+    font-weight: 500;
+    color: 	#020202;
+}
