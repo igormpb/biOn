@@ -36,7 +36,7 @@ const partySchema = new Schema({
         required: true
     },
 
-    mouth:{
+    month:{
         type:String,
         required: true
     },

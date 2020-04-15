@@ -31,7 +31,7 @@ export default class Party extends Component {
                         <h5 className="mt-5">{item.name}</h5>
                         <p><FiClock color="orange" />17<span>Horas</span></p>
                         <p className="mb-0"><FiMapPin color="orange" />{item.state} - <span>{item.city}</span></p>
-                        <Link href="#" className="btn btn-danger mt-2"> <FiCalendar /> {item.dayInit}<span>{item.mouth}</span> a {item.dayEnd}<span>{item.mouth}</span></Link>
+                        <Link href="#" className="btn btn-danger mt-2"> <FiCalendar /> {item.dayInit}<span>{item.month}</span> a {item.dayEnd}<span>{item.mouth}</span></Link>
                         <hr />
                         <h2 className="mt-5"><IoIosInformationCircleOutline size={30} color="black" /> Informação</h2>
                         <p>{item.information}</p>

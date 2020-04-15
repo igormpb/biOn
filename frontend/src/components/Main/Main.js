@@ -26,24 +26,23 @@ export default function Main(props) {
 
                 <Carousel />
                 <Tittle tittle="Rio de Janeiro" />
-                <div className="col-md-12">
-
-                    <ul >
+                <div>
+                    <ul className="row">
                         {party.map(p => (
-                            <div className="row">
-                                <li className="col-md-4" key={p._id}>
+                            <div className="col-md-4" key={p._id}>
+                                <li  >
                                     <Link to={{
                                         pathname: `/party/${p._id}`,
                                         state: { item: p }
                                     }} >
-                                        <div className="card ">
-                                            <img src={p.photo} className="card-img-top" alt="..." />
+                                        <div className="card">
+                                            <img src={p.photo} width="300" height="300" className="card-img-top" alt="..." />
                                             <div className="card-body">
                                                 <h5 className="card-title text">{p.name} <GiPartyFlags color="green" /></h5>
                                                 <p className="card-text text">{p.state}</p>
                                                 <p className="card-text text">{p.city}</p>
                                                 <hr />
-                                                <Link to={p._id} className="btn btn-danger"> <FiCalendar /> {p.dayInit}<span>{p.mouth}</span> a {p.dayEnd}<span>{p.mouth}</span></Link>
+                                                <Link to={p._id} className="btn btn-danger"> <FiCalendar /> {p.dayInit}<span>{p.month}</span> a {p.dayEnd}<span>{p.month}</span></Link>
                                             </div>
                                         </div>
                                     </Link>

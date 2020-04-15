@@ -1,12 +1,19 @@
 const Party = require('../../models/party');
 
 module.exports = createEvent = async (req, res) => {
-    const { name, state, city, photo,hours, dayInit,dayEnd, mouth, information } = req.body;
+    const { name, state, city, photo,hours, dayInit,dayEnd, month, information } = req.body;
 
-    const party = await Party.create({
-        name, state, city, photo, hours, dayInit, dayEnd, mouth, information
-    });
+    try{
+        const party = await Party.create({
+            name, state, city, photo, hours, dayInit, dayEnd, month, information
+        });
+        return res.json(party)
+    }catch(err){
+        return res.send(err)
+    }
+    
 
-    return res.json(party)
+    
+    
 
 }
