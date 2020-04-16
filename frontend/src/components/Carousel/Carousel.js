@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css'
-
+import beta from  './img/beta.png'
 export default function Carousel(){
     return(
        
@@ -12,13 +12,13 @@ export default function Carousel(){
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="https://images.pexels.com/photos/6406/sun-moon-eclipse-march-2015.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="d-block w-100" alt="..."/>
+            <img src={beta} className="d-block w-100" alt="..."/>
           </div>
           <div className="carousel-item">
-            <img src="https://images.pexels.com/photos/6406/sun-moon-eclipse-march-2015.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="d-block w-100" alt="..."/>
+            <img src={beta}  className="d-block w-100" alt="..."/>
           </div>
           <div className="carousel-item">
-            <img src="https://images.pexels.com/photos/6406/sun-moon-eclipse-march-2015.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="d-block w-100" alt="..."/>
+            <img src={beta}  className="d-block w-100" alt="..."/>
           </div>
         </div>
         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

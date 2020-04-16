@@ -62,35 +62,35 @@ export default function FormEvents() {
                                 <div className="form-row">
                                     <div className="col-md-4 mb-3">
                                         <label htmlFor="validationServer01">Nome da Festa</label>
-                                        <input type="text" className={name == '' ? "form-control is-invalid" : "form-control"} id="validationServer01" value={name} onChange={e => setName(e.target.value)} required />
+                                        <input type="text" className={name === '' ? "form-control is-invalid" : "form-control"} id="validationServer01" value={name} onChange={e => setName(e.target.value)} required />
                                         <div className="invalid-feedback">
                                             <p className="text-warning"> *required</p>
                                         </div>
                                     </div>
                                     <div className="col-md-2 mb-3">
                                         <label htmlFor="validationServer02">Dia da festa</label>
-                                        <input type="number" className={dayInit == '' ? "form-control is-invalid" : "form-control"} id="validationServer02" value={dayInit} onChange={e => setDayInit(e.target.value)} required />
+                                        <input type="number" className={dayInit === '' ? "form-control is-invalid" : "form-control"} id="validationServer02" value={dayInit} onChange={e => setDayInit(e.target.value)} required />
                                         <div className="invalid-feedback">
                                             <p className="text-warning"> *required</p>
                                         </div>
                                     </div>
                                      <div className="col-md-2 mb-3">
                                     <label htmlFor="validationServer02">Dia do final da festa</label>
-                                    <input type="number" className={dayEnd == '' ? "form-control is-invalid" : "form-control"} id="validationServer02" value={dayEnd} onChange={e => setDayEnd(e.target.value)} required />
+                                    <input type="number" className={dayEnd === '' ? "form-control is-invalid" : "form-control"} id="validationServer02" value={dayEnd} onChange={e => setDayEnd(e.target.value)} required />
                                     <div className="invalid-feedback">
                                         <p className="text-warning"> *required</p>
                                     </div>
                                 </div> 
                                     <div className="col-md-2 mb-3">
                                         <label htmlFor="validationServer02">Horas</label>
-                                        <input type="number" className={hours == '' ? "form-control is-invalid" : "form-control"} id="validationServer02" value={hours} onChange={e => setHours(e.target.value)} required />
+                                        <input type="number" className={hours === '' ? "form-control is-invalid" : "form-control"} id="validationServer02" value={hours} onChange={e => setHours(e.target.value)} required />
                                         <div className="invalid-feedback">
                                             <p className="text-warning"> *required</p>
                                         </div>
                                     </div>
                                     <div className="col-md-2 mb-3">
                                         <label htmlFor="validationServer04">Mês</label>
-                                        <select className={month == '' ? 'custom-select is-invalid' : 'custom-select'} id="validationServer04" value={month} onChange={e => setMonth(e.target.value)} required>
+                                        <select className={month === '' ? 'custom-select is-invalid' : 'custom-select'} id="validationServer04" value={month} onChange={e => setMonth(e.target.value)} required>
                                             <option value='' disabled>Select..</option>
                                             {months.map(m => {
                                                 return <option key={m.month} value={m.month}>{m.month}</option>
@@ -104,14 +104,14 @@ export default function FormEvents() {
                                 <div className="form-row">
                                     <div className="col-md-6 mb-3">
                                         <label htmlFor="validationServer03">Cidade</label>
-                                        <input type="text" className={city == '' ? "form-control is-invalid" : 'form-control'} id="validationServer03" value={city} onChange={e => setCity(e.target.value)} required />
+                                        <input type="text" className={city === '' ? "form-control is-invalid" : 'form-control'} id="validationServer03" value={city} onChange={e => setCity(e.target.value)} required />
                                         <div className="invalid-feedback">
                                             <p className="text-warning"> *required</p>
                                         </div>
                                     </div>
                                     <div className="col-md-3 mb-3">
                                         <label htmlFor="validationServer04">Estado</label>
-                                        <select className={state == '' ? 'custom-select is-invalid' : 'custom-select'} id="validationServer04" value={state} onChange={e => setState(e.target.value)} required>
+                                        <select className={state === '' ? 'custom-select is-invalid' : 'custom-select'} id="validationServer04" value={state} onChange={e => setState(e.target.value)} required>
                                             <option value='' disabled>Select..</option>
                                             {States.map(st => {
                                                 return <option key={st.uState} value={st.uState}>{st.uState}</option>
@@ -123,14 +123,14 @@ export default function FormEvents() {
                                     </div>
                                     <div className="col-md-6 mb-1">
                                         <label htmlFor="validationServer05">Foto</label>
-                                        <input type="text" className={photo == '' ? "form-control is-invalid" : "form-control"} id="validationServer05" value={photo} onChange={e => setPhoto(e.target.value)} placeholder="foto por URL..." required />
+                                        <input type="text" className={photo === '' ? "form-control is-invalid" : "form-control"} id="validationServer05" value={photo} onChange={e => setPhoto(e.target.value)} placeholder="foto por URL..." required />
                                         <div className="invalid-feedback">
                                             <p className="text-warning"> *required</p>
                                         </div>
                                     </div>
                                     <div className="col-md-6 mb-1">
                                         <label htmlFor="validationServer05">Informações</label>
-                                        <input type="text" className={information == '' ? "form-control is-invalid" : "form-control"} id="validationServer05" value={information} onChange={e => setInformation(e.target.value)} placeholder="informaçoes sobre o local exato e etc..." required />
+                                        <input type="text" className={information === '' ? "form-control is-invalid" : "form-control"} id="validationServer05" value={information} onChange={e => setInformation(e.target.value)} placeholder="informaçoes sobre o local exato e etc..." required />
                                         <div className="invalid-feedback">
                                             <p className="text-warning"> *required</p>
                                         </div>
@@ -143,7 +143,7 @@ export default function FormEvents() {
                     </div>
                 ) : (<div className="container-loading">
                     <div className="box">
-                        <Ellipsis size={200} />
+                        <Ellipsis color="#333" size={200} />
 
                     </div>
                 </div>)
